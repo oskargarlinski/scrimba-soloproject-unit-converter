@@ -1,3 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* Base styles */
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
 body {
   margin: 0;
+}
+
+/* Page layout */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+  height: 730px;
+}
+
+/* Conversion input section */
+.top-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 285px;
+  background-color: #6943ff;
+  color: white;
+}
+
+.top-section h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+/* Number input */
+#inputValue {
+  width: 120px;
+  height: 80px;
+  border: #b295ff 2px solid;
+  border-radius: 5px;
+  background-color: #6943ff;
+  color: white;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 800;
+  overflow: hidden;
+}
+
+#inputValue::-webkit-inner-spin-button,
+#inputValue::-webkit-outer-spin-button {
+  margin: 0;
+  appearance: none;
+}
+
+#inputValue::placeholder {
+  color: white;
+  opacity: 80%;
+}
+
+/* Conversion button */
+#convertButton {
+  width: 120px;
+  height: 40px;
+  border: #6943ff 2px solid;
+  border-radius: 5px;
+  background-color: white;
+  color: #3d3d3d;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
 }
